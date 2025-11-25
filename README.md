@@ -12,13 +12,15 @@ Given:
 - A time window for scheduling
 
 Your solver must:
-1. Assign each query to an available room (if possible)
-2. Ensure no overlapping reservations for any room
-3. Only schedule queries within the specified time range
-4. Return results sorted by check-in date (ascending)
+1. Respect pre-assigned queries (queries with `assigned: true` and a valid `roomId` must remain unchanged)
+2. Assign unassigned queries to available rooms (if possible)
+3. Ensure no overlapping reservations for any room
+4. Only schedule queries within the specified time range
+5. Return results sorted by check-in date (ascending)
 
 ### Constraints
 
+- Pre-assigned queries (with `assigned: true` and valid `roomId`) must not be modified and must be considered when scheduling other queries
 - A room cannot have overlapping reservations
 - Queries outside the scheduling window should not be assigned
 - If a query cannot be scheduled, it remains unassigned
