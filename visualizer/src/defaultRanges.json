@@ -1,0 +1,7 @@
+[
+  { "id": 1, "roomId": "A", "from": 1, "to": 3 },
+  { "id": 2, "roomId": "A", "from": 2, "to": 5 },
+  { "id": 3, "roomId": "B", "from": 4, "to": 6 },
+  { "id": 4, "roomId": "A", "from": 6, "to": 8 },
+  { "id": 5, "roomId": "B", "from": 5, "to": 7 }
+]
